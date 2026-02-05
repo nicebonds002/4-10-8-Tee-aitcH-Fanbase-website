@@ -1,0 +1,142 @@
+/* =========================
+   Idol Official Footer
+   ========================= */
+
+.idol-footer {
+  position: relative;
+  background: linear-gradient(180deg, #0b1020 0%, #111827 100%);
+  color: #f8fafc;
+  padding: 48px 20px 40px;
+  overflow: hidden;
+  font-family: "Inter", "Noto Sans Thai", sans-serif;
+}
+
+/* soft glow background */
+.idol-footer::before {
+  content: "";
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(
+    circle,
+    rgba(244, 114, 182, 0.15),
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+.idol-footer-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* =========================
+   Navigation Links
+   ========================= */
+
+.idol-links {
+  margin: 28px 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.idol-links a {
+  position: relative;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #e5e7eb;
+  text-decoration: none;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+}
+
+.idol-links a:hover {
+  color: #f472b6;
+}
+
+/* underline animation */
+.idol-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 0;
+  background: linear-gradient(90deg, #f472b6, #60a5fa);
+  transition: width 0.3s ease;
+}
+
+.idol-links a:hover::after {
+  width: 100%;
+}
+
+/* =========================
+   Copyright
+   ========================= */
+
+.idol-copyright {
+  font-size: 14px;
+  opacity: 0.9;
+  margin-bottom: 10px;
+}
+
+/* =========================
+   Legal Note
+   ========================= */
+
+.idol-note {
+  font-size: 12px;
+  color: #c7d2fe;
+  line-height: 1.6;
+}
+
+/* =========================
+   Social Icons (Optional)
+   ========================= */
+
+.idol-social {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.idol-social a {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.08);
+  color: #f8fafc;
+  transition: all 0.3s ease;
+}
+
+.idol-social a:hover {
+  background: #f472b6;
+  color: #020617;
+  transform: translateY(-3px);
+}
+
+/* =========================
+   Responsive
+   ========================= */
+
+@media (max-width: 640px) {
+  .idol-links {
+    gap: 14px;
+  }
+
+  .idol-links a {
+    font-size: 13px;
+  }
+}

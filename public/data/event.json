@@ -1,0 +1,126 @@
+{
+  "events": [
+    {
+      "event_id": "EVT202601001",
+      "event_name": "Idol Live Performance Vol.12",
+      "event_type": "live",
+      "idol_group": {
+        "group_id": "IDG001",
+        "group_name": "Sparkle☆Dream"
+      },
+      "date": "2026-01-19",
+      "time": {
+        "start": "18:00",
+        "end": "20:00",
+        "timezone": "Asia/Bangkok"
+      },
+      "location": {
+        "venue_id": "VEN001",
+        "venue_name": "Shibuya Idol Hall",
+        "address": "Shibuya, Tokyo, Japan",
+        "latitude": 35.6595,
+        "longitude": 139.7005
+      },
+      "performers": [
+        {
+          "member_id": "MB001",
+          "name": "Airi",
+          "position": "Center"
+        },
+        {
+          "member_id": "MB002",
+          "name": "Mika",
+          "position": "Vocal"
+        }
+      ],
+      "schedule_detail": [
+        {
+          "title": "Opening",
+          "start_time": "18:00",
+          "end_time": "18:10"
+        },
+        {
+          "title": "Main Live",
+          "start_time": "18:10",
+          "end_time": "19:30"
+        },
+        {
+          "title": "Cheki / Meet & Greet",
+          "start_time": "19:30",
+          "end_time": "20:00"
+        }
+      ],
+      "ticket": {
+        "price": 2500,
+        "currency": "JPY",
+        "ticket_type": "standing",
+        "purchase_url": "https://example.com/ticket/EVT202601001"
+      },
+      "status": "scheduled",
+      "notes": "ห้ามถ่ายวิดีโอระหว่างการแสดง",
+      "created_at": "2026-01-10T10:00:00+09:00",
+      "updated_at": "2026-01-12T15:30:00+09:00"
+    },
+    {
+      "event_id": "EVT202601002",
+      "event_name": "Theater Stage",
+      "event_type": "live",
+      "idol_group": {
+        "group_id": "IDG001",
+        "group_name": "Sparkle☆Dream"
+      },
+      "date": "2026-01-19",
+      "time": {
+        "start": "18:00",
+        "end": "18:01",
+        "timezone": "Asia/Bangkok"
+      },
+      "location": {
+        "venue_id": "VEN001",
+        "venue_name": "Shibuya Idol Hall",
+        "address": "Shibuya, Tokyo, Japan",
+        "latitude": 35.6595,
+        "longitude": 139.7005
+      },
+      "performers": [
+        {
+          "member_id": "MB001",
+          "name": "Airi",
+          "position": "Center"
+        },
+        {
+          "member_id": "MB002",
+          "name": "Mika",
+          "position": "Vocal"
+        }
+      ],
+      "schedule_detail": [
+        {
+          "title": "Opening",
+          "start_time": "18:00",
+          "end_time": "18:10"
+        },
+        {
+          "title": "Main Live",
+          "start_time": "18:10",
+          "end_time": "19:30"
+        },
+        {
+          "title": "Cheki / Meet & Greet",
+          "start_time": "19:30",
+          "end_time": "20:00"
+        }
+      ],
+      "ticket": {
+        "price": 2500,
+        "currency": "JPY",
+        "ticket_type": "standing",
+        "purchase_url": "https://example.com/ticket/EVT202601001"
+      },
+      "status": "scheduled",
+      "notes": "ห้ามถ่ายวิดีโอระหว่างการแสดง",
+      "created_at": "2026-01-10T10:00:00+09:00",
+      "updated_at": "2026-01-12T15:30:00+09:00"
+    }
+  ]
+}

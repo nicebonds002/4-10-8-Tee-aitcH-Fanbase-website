@@ -1,0 +1,84 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 28px;
+}
+
+.card {
+  border-radius: 20px;
+  overflow: hidden;
+  background: var(--card-bg);
+  box-shadow: var(--shadow);
+}
+
+.image {
+  height: 200px;
+  background: var(--skeleton);
+}
+
+.content {
+  padding: 20px;
+}
+
+.title,
+.line,
+.lineShort,
+.price,
+.button {
+  background: var(--skeleton);
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.title {
+  height: 20px;
+  width: 70%;
+}
+
+.line {
+  height: 14px;
+  width: 100%;
+}
+
+.lineShort {
+  height: 14px;
+  width: 60%;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  height: 18px;
+  width: 80px;
+}
+
+.button {
+  height: 36px;
+  width: 90px;
+  border-radius: 999px;
+}
+
+/* shimmer */
+@keyframes shimmer {
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+:root {
+  --skeleton: linear-gradient(
+    90deg,
+    #e5e7eb 25%,
+    #f3f4f6 37%,
+    #e5e7eb 63%
+  );
+}
+
+.card * {
+  background-size: 200% 100%;
+  animation: shimmer 1.4s infinite;
+}

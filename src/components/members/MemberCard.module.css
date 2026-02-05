@@ -1,0 +1,83 @@
+.card {
+  width: 190px;
+  height: 254px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.7);
+  cursor: pointer;
+  animation: fadeUp 0.6s ease forwards;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.85);
+}
+
+.img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.card:hover .img {
+  transform: scale(1.05);
+  filter: brightness(0.75);
+}
+
+.frontContent {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to top, rgba(0,0,0,0.75), rgba(0,0,0,0));
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border-radius: 0 0 12px 12px;
+}
+
+.badge {
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  width: fit-content;
+  align-self: flex-start;
+}
+
+.badge[data-team="NV"] { background-color: #ff4d6dee; }
+.badge[data-team="BIII"] { background-color: #4d9cffee; }
+.badge[data-team="Trainee"] { background-color: #2ecc71ee; }
+.badge[data-team="Captain"] { background-color: #f1c40fee; color: #000; }
+
+.description strong {
+  text-align: left;
+  font-size: 20px;           /* ปรับให้ไม่ใหญ่เกินไป */
+  display: block;
+  font-weight: 700;           /* น้ำหนักกลาง ดูทันสมัย */
+  letter-spacing: 0.4px;      /* นุ่มนวลกว่าเดิม */
+  line-height: 1.3;           /* เพิ่มความสบายตา */
+  color: #ffffff;             /* ขาวสะอาด */
+  text-shadow: 0 1px 3px rgba(0,0,0,0.5); /* เพิ่มมิติเล็กน้อย */
+}
+
+.cardFooter {
+  text-align: left;
+  color: rgba(255, 255, 255, 0.65); /* นุ่มกว่าเดิม */
+  font-size: 12px;                  /* เล็กลง ให้ไม่แย่งความเด่นของหัวข้อ */
+  font-weight: 400;                  /* เบา ดูโมเดิร์น */
+  letter-spacing: 0.2px;
+}

@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "name": "EMMY",
+        "img": "/image/member1.jpg",
+        "fullname": "Ornnitcha Phromsupa",
+        "team": "NV"
+    },
+    {
+        "id": 2,
+        "name": "PATT",
+        "img": "/image/member2.jpg",
+        "fullname": "Pattra Theeravas",
+        "team": "BIII"
+    },
+    {
+        "id": 3,
+        "name": "PALMMY",
+        "img": "/image/member3.jpg",
+        "fullname": "Punyisa Kaewsawang",
+        "team": "NV"
+    },
+    {
+        "id": 4,
+        "name": "MICHA",
+        "img": "/image/member4.jpg",
+        "fullname": "Naththarinee Kusolphat",
+        "team": "BIII"
+    },
+    {
+        "id": 5,
+        "name": "BERRY",
+        "img": "/image/member5.jpg",
+        "fullname": "Jirapinya Chantawannakul",
+        "team": "NV"
+    },
+    {
+        "id": 6,
+        "name": "JANRY",
+        "img": "/image/member6.jpg",
+        "fullname": "Kalnyarat Panphiphat",
+        "team": "BIII"
+    },
+    {
+        "id": 7,
+        "name": "MARINE",
+        "img": "/image/member7.jpg",
+        "fullname": "Kotchapon Ponchokchai",
+        "team": "NV"
+    },
+    {
+        "id": 8,
+        "name": "L",
+        "img": "/image/member8.jpg",
+        "fullname": "Sirikorn Nilkasap",
+        "team": "NV"
+    },
+    {
+        "id": 9,
+        "name": "HOOP",
+        "img": "/image/member9.jpg",
+        "fullname": "Patalee Prasertteerachai",
+        "team": ["Captain","BIII"]
+    }
+]

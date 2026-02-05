@@ -1,0 +1,146 @@
+.expand-menu {
+  position: fixed; /* กำหนดตำแหน่งแบบ fixed ให้เมนูติดอยู่กับหน้าจอ แม้เลื่อนหน้าเว็บ */
+  top: 25px; /* ระยะห่างจากขอบบนของหน้าจอ 25px */
+  left: 50%;  /* วางตำแหน่งจากด้านซ้าย 50% ของหน้าจอ */
+  transform: translateX(-50%); /* ขยับกลับไปทางซ้ายครึ่งหนึ่งของความกว้างตัวเอง เพื่อจัดให้อยู่กึ่งกลางพอดี */
+  background: rgba(255, 255, 255, 0.15); /* พื้นหลังสีขาวแบบโปร่งใส (glassmorphism) */
+  border-radius: 30px; /* ทำขอบมนให้ดูนุ่มนวล */
+  padding: 10px 25px; /* ระยะห่างด้านใน: บน-ล่าง 10px / ซ้าย-ขวา 25px */
+  display: flex; /* ใช้ Flexbox สำหรับจัดเรียงเมนูภายใน */
+  gap: 25px; /* ระยะห่างระหว่างเมนูแต่ละรายการ */
+  overflow: hidden; /* ซ่อนเนื้อหาที่ล้นออกนอกกรอบ (เหมาะกับ animation / hover) */
+  max-width: 1000px; /* กำหนดความกว้างสูงสุดของเมนู */
+  transition: all 0.5s ease; /* ทำให้การเปลี่ยนแปลงค่า CSS ลื่นไหลในเวลา 0.5 วินาที */
+  z-index: 10000; /* กำหนดลำดับชั้นให้อยู่เหนือองค์ประกอบอื่น ๆ */
+  -webkit-backdrop-filter: blur(15px); /* ทำพื้นหลังด้านหลังเบลอ (รองรับ Safari) */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* เส้นขอบโปร่งใส เพิ่มมิติให้สไตล์กระจก */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1); /* เงาด้านนอกเพื่อยกเมนูลอยขึ้น + เงาด้านในเพิ่มความเงาแบบกระจก */
+  animation: slideDownFromTop 0.5s ease-out forwards; /* แอนิเมชันให้เมนูเลื่อนลงมาจากด้านบนตอนโหลด */
+}
+
+.expand-menu.collapsed {
+  max-width: 45px;
+  padding: 10px 15px;
+}
+
+.expand-menu.hovered {
+  max-width: 1000px;
+  padding: 10px 25px;
+}
+
+.expand-menu ul {
+  display: flex; /* ค่า default แต่ใส่ไว้ชัดเจน */
+  gap: 24px;           /* ระยะห่างแต่ละเมนู */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  
+}
+
+.expand-menu li {
+  white-space: nowrap;
+}
+
+.expand-menu a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  opacity: 1;
+  cursor: pointer;
+  transition: opacity 0.35s ease, color 0.35s ease;
+}
+
+.expand-menu a:hover,
+.expand-menu a:focus {
+  color: #ffdd57;
+}
+
+        .expand-menu.collapsed a {
+          opacity: 0;
+          pointer-events: none;
+        }
+
+        .expand-menu.hovered a {
+          opacity: 1;
+          pointer-events: auto;
+        }
+
+        /* Mobile Styles */
+        .mobile-menu-toggle {
+          display: none;
+          position: fixed;
+          top: 20px;
+          right: 20px;
+          flex-direction: column;
+          cursor: pointer;
+          z-index: 10000;
+        }
+
+        .mobile-menu-toggle span {
+          width: 25px;
+          height: 3px;
+          background: #fff;
+          margin: 3px 0;
+          transition: 0.3s;
+        }
+
+        .mobile-drawer {
+          position: fixed;
+          top: 0;
+          right: 0;
+          width: 250px;
+          height: 100%;
+          background: rgba(255, 255, 255 ,0.15);
+          display: flex;
+          flex-direction: column;
+          padding: 60px 20px;
+          z-index: 9999;
+          backdrop-filter: blur(15px);
+          -webkit-backdrop-filter: blur(15px);
+          border-left: 1px solid rgba(255, 255, 255, 0.3);
+          box-shadow: -4px 0 20px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        }
+
+        .mobile-drawer a {
+          color: #ddd;
+          text-decoration: none;
+          padding: 15px 0;
+          font-weight: 600;
+          transition: color 0.3s;
+        }
+
+        .mobile-drawer a:hover {
+          color: #ffdd57;
+        }
+
+        .content {
+          margin-top: 150px;
+          padding: 100px 20px;
+          min-height: 600px;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+          .expand-menu {
+            display: none;
+          }
+          .mobile-menu-toggle {
+            display: flex;
+          }
+          .content {
+            margin-top: 100px;
+            padding: 50px 20px;
+          }
+        }        
+        @keyframes slideDownFromTop {
+          0% {
+            transform: translate(-50%, -100%);
+            opacity: 0;
+          }
+          100% {
+            transform: translate(-50%, 0);
+            opacity: 1;
+          }
+        }

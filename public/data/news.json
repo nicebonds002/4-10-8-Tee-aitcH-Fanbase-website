@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "title": "ประกาศซิงเกิลใหม่ 'Shining Days'",
+    "date": "2026-01-10",
+    "category": "Release",
+    "summary": "ซิงเกิลใหม่ลำดับที่ 8 ของวง เตรียมปล่อยทุกแพลตฟอร์ม 1 กุมภาพันธ์นี้",
+    "image": "/images/news/single.jpg"
+  },
+  {
+    "id": 2,
+    "title": "คอนเสิร์ตใหญ่ประจำปี 2026",
+    "date": "2026-01-05",
+    "category": "Event",
+    "summary": "พบกับคอนเสิร์ตใหญ่ ณ อิมแพ็ค อารีน่า พร้อมเซอร์ไพรส์พิเศษ",
+    "image": "/images/news/concert.jpg"
+  },
+  {
+    "id": 3,
+    "title": "เมมเบอร์ A พักกิจกรรมชั่วคราว",
+    "date": "2025-12-28",
+    "category": "Notice",
+    "summary": "เนื่องจากเหตุผลด้านสุขภาพ จะกลับมาทำกิจกรรมตามปกติเร็ว ๆ นี้",
+    "image": "/images/news/notice.jpg"
+  },
+  {
+    "id": 4,
+    "title": "เปิดตัวสินค้าใหม่ Official Goods",
+    "date": "2025-12-20",
+    "category": "Goods",
+    "summary": "เสื้อยืด โฟโต้เซ็ต และของที่ระลึกรุ่นใหม่",
+    "image": "/images/news/goods.jpg"
+  },
+  {
+    "id": 5,
+    "title": "ยอดวิว MV ล่าสุดทะลุ 10 ล้านวิว",
+    "date": "2025-12-15",
+    "category": "Achievement",
+    "summary": "ขอบคุณแฟน ๆ ทุกคนที่สนับสนุนพวกเราเสมอมา",
+    "image": "/images/news/mv.jpg"
+  },
+    {
+    "id": 6,
+    "title": "ประกาศซิงเกิลใหม่ 'Shining Days'",
+    "date": "2026-01-10",
+    "category": "Release",
+    "summary": "ซิงเกิลใหม่ลำดับที่ 8 ของวง เตรียมปล่อยทุกแพลตฟอร์ม 1 กุมภาพันธ์นี้",
+    "image": "/images/news/single.jpg"
+  },
+  {
+    "id": 7,
+    "title": "คอนเสิร์ตใหญ่ประจำปี 2026",
+    "date": "2026-01-05",
+    "category": "Event",
+    "summary": "พบกับคอนเสิร์ตใหญ่ ณ อิมแพ็ค อารีน่า พร้อมเซอร์ไพรส์พิเศษ",
+    "image": "/images/news/concert.jpg"
+  },
+  {
+    "id": 8,
+    "title": "เมมเบอร์ A พักกิจกรรมชั่วคราว",
+    "date": "2025-12-28",
+    "category": "Notice",
+    "summary": "เนื่องจากเหตุผลด้านสุขภาพ จะกลับมาทำกิจกรรมตามปกติเร็ว ๆ นี้",
+    "image": "/images/news/notice.jpg"
+  },
+  {
+    "id": 9,
+    "title": "เปิดตัวสินค้าใหม่ Official Goods",
+    "date": "2025-12-20",
+    "category": "Goods",
+    "summary": "เสื้อยืด โฟโต้เซ็ต และของที่ระลึกรุ่นใหม่",
+    "image": "/images/news/goods.jpg"
+  },
+  {
+    "id": 10,
+    "title": "ยอดวิว MV ล่าสุดทะลุ 10 ล้านวิว",
+    "date": "2025-12-15",
+    "category": "Achievement",
+    "summary": "ขอบคุณแฟน ๆ ทุกคนที่สนับสนุนพวกเราเสมอมา",
+    "image": "/images/news/mv.jpg"
+  }
+]
